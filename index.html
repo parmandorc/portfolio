@@ -1,0 +1,56 @@
+---
+layout: skeleton
+title: Portfolio
+description: Portfolio of Pablo Armando Rodríguez Codes
+keywords: portfolio
+css: homepage
+---
+
+{% for project in site.projects %}
+  {% if project.featured == 'primary' %}
+    {% assign name = project.path | split: "/" | last | split: "." | first %}
+    <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project -big" aria-labelledby="{{name}}">
+      <div class="shadow"></div>
+      <div class="background">
+        <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+      </div>
+      <div class="gradient"></div>
+      <h3 id="{{name}}"><span>Featured</span>{{ project.title }}</h3>
+      <p>{{ project.intro }}</p>
+    </a>
+  {% endif %}
+{% endfor %}
+
+{% for project in site.projects %}
+  {% if project.featured == 'secondary' %}
+    {% assign name = project.path | split: "/" | last | split: "." | first %}
+    <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project" aria-labelledby="{{name}}">
+      <div class="shadow"></div>
+      <div class="background">
+        <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+      </div>
+      <div class="gradient"></div>
+      <h3 id="{{name}}"><span>Featured</span>{{ project.title }}</h3>
+      <p>{{ project.intro }}</p>
+    </a>
+  {% endif %}
+{% endfor %}
+
+<div class="c-cards-list">
+  {% for project in site.projects %}
+    {% if project.featured.size == nil %}
+      {% assign name = project.path | split: "/" | last | split: "." | first %}
+      <a href="{{ site.baseurl }}{{ project.url }}" class="card" aria-labelledby="{{name}}">
+        <div class="shadow"></div>
+        <div class="background"></div>
+        <div class="thumbnail">
+          <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+        </div>
+        <div class="content">
+          <h3 id="{{name}}">{{ project.title }}</h3>
+          <p>{{ project.intro }}</p>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

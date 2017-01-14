@@ -1,0 +1,26 @@
+.c-footer {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: $color-3;
+  text-align: center;
+
+  @media #{$mq-tablet} {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    font-size: $font-size-medium;
+  }
+
+  a {
+    color: currentColor;
+
+    &::after {
+      content: ' -';
+    }
+
+    &:last-of-type {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

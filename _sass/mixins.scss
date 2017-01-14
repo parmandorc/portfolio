@@ -1,0 +1,15 @@
+@mixin text-legibility {
+  text-shadow: 0 2px 2px $color-6 ;
+}
+
+@mixin depth-scale {
+  transform: scale(#{$depth-scale});
+}
+
+@mixin reverse-depth-scale {
+  transform: scale(#{ 1 / $depth-scale});
+}
+
+@mixin reset-depth-scale {
+  transform: scale(1);
+}

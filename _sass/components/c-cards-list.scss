@@ -1,0 +1,104 @@
+.c-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  // The margin should be moved to a layout file if this component were
+  // to be reduced in a different context
+  margin-top: 70px;
+
+  > .card {
+    display: flex;
+    position: relative;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+    transition: transform 200ms cubic-bezier(0, 0, 0, 1);
+    will-change: transform;
+
+    @media #{$mq-tablet} {
+      flex-basis: calc(50% - 20px);
+    }
+
+    @media #{$mq-laptop} {
+      flex-basis: calc((100% / 3) - ((20px * 2) / 3));
+    }
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(.96); // We want a small shadow around the cards
+      transition: transform 80ms cubic-bezier(0, 0, 1, 0);
+      box-shadow: 0 0 15px $color-9;
+      // We reduce the opacity of the shadow to visually have it similar to the
+      // ones of the featured projects
+      opacity: .5;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-4;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 205px;
+      overflow: hidden;
+
+      > div {
+        @include depth-scale;
+
+        width: 100%;
+        height: 100%;
+        // The transform-origin property should be set to the center of the card
+        // but due to the small scale change, this approximation is sufficient
+        transform-origin: center bottom;
+        transition: transform 200ms cubic-bezier(0, 0, 0, 1);
+        background-color: $color-3;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    .content {
+      padding: 20px;
+      z-index: 1;
+
+      > h3 {
+        margin: 0 0 10px;
+        color: $color-2;
+        font-size: $font-size-medium;
+      }
+
+      > p {
+        margin: 0;
+        color: $color-3;
+      }
+    }
+
+    &:hover {
+      @include depth-scale;
+      transition: transform 200ms cubic-bezier(0, 0, 0, 1);
+
+      .shadow {
+        @include reverse-depth-scale;
+        transition: transform 80ms cubic-bezier(0, 0, 0, 1);
+      }
+
+      .thumbnail > div {
+        @include reset-depth-scale;
+        transition: transform 200ms cubic-bezier(0, 0, 0, 1);
+      }
+    }
+  }
+}

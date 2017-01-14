@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} {{ site.page-title-suffix }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "styles/projects.css" | relative_url}}" type="text/css">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+  </head>
+  <body>
+    {% include header.html %}
+
+    <h1 class="c-title">{{ page.title }}</h1>
+
+    <div class="l-project">
+      <div class="video">
+        {%if page.video_id %}
+          <iframe type="text/html" src="https://www.youtube.com/embed/{{page.video_id}}?controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>
+        {% endif %}
+      </div>
+
+      <div class="project-info">
+        <div class="card">
+          <div><span>Type</span> {{page.type}} {% unless page.type %}–{% endunless%}</div>
+          <div><span>Position</span> {{page.position}} {% unless page.position %}–{% endunless%}</div>
+          <div><span>Date</span> {{page.dates}} {% unless page.dates %}–{% endunless%}</div>
+          <div class="links">
+            <span>Links</span>
+            <div>
+              {% for link_hash in page.links %}
+                {% for link in link_hash %}
+                  <a href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }}</a>
+                {% endfor %}
+              {% endfor %}
+              {% unless page.links %}–{% endunless%}
+            </div>
+          </div>
+        </div>
+        <ul class="c-tags-list">
+          {% for tag in page.tags %}
+            <li class="tag">{{ tag }}</li>
+          {% endfor %}
+        </div>
+      </ul>
+
+      <article>
+        {{ content }}
+      </article>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

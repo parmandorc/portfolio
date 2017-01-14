@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} {{ site.page-title-suffix }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% assign css_filename = (page.css == 'homepage') ? 'homepage' : 'about'  %}
+    <link rel="stylesheet" href="{{css_filename | prepend: 'styles/' | append: '.css' | relative_url}}" type="text/css">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+  </head>
+  <body>
+    {% include header.html %}
+
+    <h1 class="c-title">{{ page.title }}</h1>
+
+    {{ content }}
+
+    {% include footer.html %}
+  </body>
+</html>

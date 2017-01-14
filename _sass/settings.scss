@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: font-url('fonts/LatoLatin-Light.woff2') format('woff2'), font-url('fonts/LatoLatin-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: font-url('fonts/LatoLatin-Semibold.woff2') format('woff2'), font-url('fonts/LatoLatin-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: font-url('fonts/LatoLatin-Bold.woff2') format('woff2'), font-url('fonts/LatoLatin-Bold.woff') format('woff');
+}
+
+// Font families
+$font-family-1: 'Lato', 'Tahoma', sans-serif;
+
+// Font sizes
+$font-size-small:    14px;
+$font-size-normal:   18px;
+$font-size-medium:   20px;
+$font-size-x-medium: 22px;
+$font-size-big:      45px;
+$font-size-huge:     72px;
+
+// Font weights
+$font-weight-light:  300;
+$font-weight-normal: 400;
+$font-weight-bold:   700;
+
+// Colors
+$color-1:  #fdfdfd;
+$color-2:  #4a4a4a;
+$color-3:  rgba($color-2, .8);
+$color-4:  #fff;
+$color-5:  rgba($color-4, .7);
+$color-6:  #000;
+$color-7:  rgba($color-6, .1);
+$color-8:  rgba($color-6, .3);
+$color-9:  rgba($color-6, .5);
+
+// Wrapper
+$wrapper-max-width:     1024px;
+$wrapper-padding:         15px;
+$wrapper-padding-medium:  30px;
+$wrapper-padding-large:   42px;
+
+// General layout
+$content-max-width: 620px; // max-width for the text
+$media-max-width:   780px; // max-width for the media within paragraphs
+
+// Depth effect
+$depth-scale: 101 / 100;
+
+// Breakpoints
+$breakpoint-large-mobile:   425px;
+$breakpoint-tablet:         768px;
+$breakpoint-laptop:        1024px;
+
+// Media queries
+$mq-large-mobile: 'screen and (min-width: #{$breakpoint-large-mobile})';
+$mq-tablet:       'screen and (min-width: #{$breakpoint-tablet})';
+$mq-laptop:       'screen and (min-width: #{$breakpoint-laptop})';
+$mq-content:      'screen and (min-width: #{$content-max-width})';
+$mq-media:        'screen and (min-width: #{$media-max-width})';

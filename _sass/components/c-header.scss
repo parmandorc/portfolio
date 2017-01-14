@@ -1,0 +1,34 @@
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  @media #{$mq-tablet} {
+    margin-top: 30px;
+  }
+
+  > h2 {
+    margin: 0;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+
+    span {
+      display: none;
+
+      @media #{$mq-tablet} {
+        display: inline;
+      }
+    }
+  }
+
+  > nav a {
+    margin-left: 20px;
+    color: $color-3;
+    font-size: $font-size-medium;
+
+    @media #{$mq-tablet} {
+      margin-left: 50px;
+    }
+  }
+}
