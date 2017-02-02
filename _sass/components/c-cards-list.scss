@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-start;
   // The margin should be moved to a layout file if this component were
   // to be reduced in a different context
   margin-top: 70px;
@@ -21,10 +21,23 @@
 
     @media #{$mq-tablet} {
       flex-basis: calc(50% - 20px);
+      margin-right: 20px;
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
     }
 
     @media #{$mq-laptop} {
       flex-basis: calc((100% / 3) - ((20px * 2) / 3));
+
+      &:nth-of-type(2n) {
+        margin-right: 20px;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
     }
 
     .shadow {
