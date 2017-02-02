@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Lato';
   font-weight: 300;
-  src: font-url('fonts/LatoLatin-Light.woff2') format('woff2'), font-url('fonts/LatoLatin-Light.woff') format('woff');
+  src: url('../assets/fonts/LatoLatin-Light.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-weight: 400;
-  src: font-url('fonts/LatoLatin-Semibold.woff2') format('woff2'), font-url('fonts/LatoLatin-Semibold.woff') format('woff');
+  src: url('../assets/fonts/LatoLatin-Semibold.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Semibold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Lato';
   font-weight: 700;
-  src: font-url('fonts/LatoLatin-Bold.woff2') format('woff2'), font-url('fonts/LatoLatin-Bold.woff') format('woff');
+  src: url('../assets/fonts/LatoLatin-Bold.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Bold.woff') format('woff');
 }
 
 // Font families
