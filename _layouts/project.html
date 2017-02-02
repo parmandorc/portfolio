@@ -14,7 +14,8 @@
     <h1 class="c-title">{{ page.title }}</h1>
 
     <div class="l-project">
-      <div class="video">
+      {% assign name = page.path | split: "/" | last | split: "." | first %}
+      <div class="video" {% unless page.video_id %}style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"{% endunless %}>
         {%if page.video_id %}
           <iframe type="text/html" src="https://www.youtube.com/embed/{{page.video_id}}?controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>
         {% endif %}
