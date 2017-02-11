@@ -34,8 +34,16 @@ defaults:
 # Build settings
 markdown: kramdown
 gems:
+- jekyll-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
 sass:
   style: compressed
+autoprefixer:
+  only_production: true
+  browsers:
+  - "> 1%"
+  - last 2 versions
+  - Firefox ESR
+  - Safari >= 8
