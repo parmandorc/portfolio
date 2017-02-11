@@ -115,6 +115,7 @@
     }
 
     img {
+      display: block;
       width: 100%;
       max-width: $media-max-width;
 
@@ -122,6 +123,42 @@
         position: relative;
         left: #{-($media-max-width - $content-max-width) / 2};
         width: auto;
+      }
+    }
+
+    .image-group {
+      max-width: $media-max-width;
+      margin: 30px auto 0;
+
+      @media #{$mq-media} {
+        display: flex;
+        align-items: stretch;
+        margin: 40px auto 0;
+      }
+
+      > div {
+        min-width: 0;
+
+        &:first-of-type {
+          margin-bottom: 5px;
+        }
+
+        @media #{$mq-media} {
+          flex-grow: 1;
+
+          &:first-of-type {
+            margin-right: 5px;
+            margin-bottom: 0;
+          }
+        }
+
+        > img {
+          width: 100%;
+
+          @media #{$mq-media} {
+            position: static;
+          }
+        }
       }
     }
   }

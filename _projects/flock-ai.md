@@ -24,4 +24,9 @@ Nunc dictum fermentum urna vitae malesuada. Mauris volutpat mauris in rhoncus fr
 
 Nunc rutrum at purus quis aliquet. Donec tempor odio imperdiet consequat varius. Praesent suscipit est sit amet malesuada volutpat. Suspendisse eget laoreet dui. Nulla ut dapibus arcu. Proin sit amet velit nulla. Praesent posuere, purus non rhoncus dictum, nibh eros fringilla nisl, a sollicitudin libero diam tincidunt urna. Mauris ac varius enim, pretium molestie mauris. Duis nulla dolor, ullamcorper a odio eu, pellentesque vestibulum nisl. Donec bibendum dapibus sapien in lobortis. Nullam congue lorem a lectus feugiat pellentesque. Aliquam feugiat dignissim augue. Ut aliquam fringilla congue. Nulla facilisi.
 
+<div class="image-group">
+	<div><img alt="Screenshot" src="{{ site.baseurl }}/assets/images/{{ page.url | split: "/" | last }}/screenshot.jpg" /></div>
+	<div><img alt="Screenshot" src="{{ site.baseurl }}/assets/images/{{ page.url | split: "/" | last }}/screenshot-test.jpg" /></div>
+</div>
+
 Vivamus metus neque, sollicitudin eget erat sed, vestibulum accumsan sapien. Donec nibh urna, luctus eu iaculis et, interdum nec massa. Curabitur vel blandit ex. Sed dignissim tristique erat at malesuada. Aenean gravida auctor semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi blandit lacus lacus, sit amet maximus ex gravida nec. Phasellus vitae sem ac turpis bibendum rutrum id ac sem.
