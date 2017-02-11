@@ -28,7 +28,7 @@ Nunc rutrum at purus quis aliquet. Donec tempor odio imperdiet consequat varius.
 
 <div class="image-group">
 	<div><img alt="Screenshot" src="{{image_path}}/screenshot.jpg" /></div>
-	<div><img alt="Screenshot" src="{{image_path}}/screenshot-test.jpg" /></div>
+	<div><img alt="Screenshot" src="{{image_path}}/screenshot.jpg" /></div>
 </div>
 
 Vivamus metus neque, sollicitudin eget erat sed, vestibulum accumsan sapien. Donec nibh urna, luctus eu iaculis et, interdum nec massa. Curabitur vel blandit ex. Sed dignissim tristique erat at malesuada. Aenean gravida auctor semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi blandit lacus lacus, sit amet maximus ex gravida nec. Phasellus vitae sem ac turpis bibendum rutrum id ac sem.
