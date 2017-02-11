@@ -90,17 +90,27 @@
   > article {
     p {
       max-width: $content-max-width;
-      margin: 0 auto 30px;
-      // font-size: $font-size-medium;
+      margin: 30px auto 0;
       line-height: 1.6;
       text-align: justify;
 
-      &:last-of-type {
-        margin-bottom: 0;
+      &:first-of-type {
+        margin-top: 0;
       }
 
       @media #{$mq-tablet} {
-        margin: 0 auto 40px;
+        margin: 40px auto 0;
+      }
+    }
+
+    ul, ol {
+      max-width: $content-max-width;
+      margin: 10px auto 0;
+      line-height: 1.6;
+      text-align: justify;
+
+      @media #{$mq-tablet} {
+        margin: 20px auto 0;
       }
     }
 
