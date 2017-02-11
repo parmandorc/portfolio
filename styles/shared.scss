@@ -1,0 +1,28 @@
+---
+---
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url('../assets/fonts/LatoLatin-Light.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url('../assets/fonts/LatoLatin-Semibold.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url('../assets/fonts/LatoLatin-Bold.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Bold.woff') format('woff');
+}
+
+@import
+  'settings',
+  'mixins',
+  'base',
+  'components/c-header',
+  'components/c-title',
+  'components/c-footer';
