@@ -1,34 +1,39 @@
 ---
 title: FlockAI
 description: FlockAI
-keywords: flockai, flock ai
-featured: primary
-intro: Minus sit sunt quasi maiores. Modi tenetur iure ea et eius sint ducimus eveniet. Rem maxime eum at nesciunt recusandae qui. Itaque similique et quia. Veniam doloremque rerum debitis sed reiciendis.
+keywords: flockai, flock, ai, flock ai, unreal, flocking, behavior, behaviour
+featured: secondary
+intro: Implementation of a flocking behavior algorithm, featuring reaction to external stimuli.
 tags:
- - unity 3d
- - behavior trees
- - multi-threading programming
+ - artificial intelligence
+ - flocking behavior
+ - unreal
+ - blueprint
  - c++
-video_id: yAIafpmqnLI
-type: Coursework project
-position: Lead engineer
+video_id: 39Wc7Bgj5gI
+type: Personal project
+position: Main programmer
 dates: May 2015
 links: 
- - GitHub: test
- - Linked In: test 2
+ - GitHub: https://github.com/parmandorc/FlockAI
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-Nunc dictum fermentum urna vitae malesuada. Mauris volutpat mauris in rhoncus fringilla. Fusce nec laoreet est. Duis pharetra pharetra est, vitae molestie tortor ullamcorper pellentesque. Nunc quis ultrices ipsum. Integer interdum lobortis ultrices. Duis laoreet, enim vitae rutrum dictum, ante enim tempus neque, vel euismod erat justo a orci. Integer in porttitor risus. Maecenas viverra felis in viverra ullamcorper.
+This is an implementation of the traditional approach to flocking behavior, based on three components:
+- Alignment. Agents follow the direction of the group.
+- Cohesion. Agents stay together in a group.
+- Separation. Agents move away from each other so the group does not collapse.
 
-![Screenshot]({{image_path}}/screenshot.jpg)
+As a personal contribution, the algorithm doesn't use normalized vectors for each component as in the traditional approach. By contrast, vectors are proportional in length to the distances, which contributes to a more realistic behavior.
 
-Nunc rutrum at purus quis aliquet. Donec tempor odio imperdiet consequat varius. Praesent suscipit est sit amet malesuada volutpat. Suspendisse eget laoreet dui. Nulla ut dapibus arcu. Proin sit amet velit nulla. Praesent posuere, purus non rhoncus dictum, nibh eros fringilla nisl, a sollicitudin libero diam tincidunt urna. Mauris ac varius enim, pretium molestie mauris. Duis nulla dolor, ullamcorper a odio eu, pellentesque vestibulum nisl. Donec bibendum dapibus sapien in lobortis. Nullam congue lorem a lectus feugiat pellentesque. Aliquam feugiat dignissim augue. Ut aliquam fringilla congue. Nulla facilisi.
+Furthermore, agents are able to react to external stimuli – they will move towards green dots and away from the red ones (similar to going towards food and away from danger). This allows for very interesting emergent behaviors.
 
 <div class="image-group">
-	<div><img alt="Screenshot" src="{{image_path}}/screenshot.jpg" /></div>
-	<div><img alt="Screenshot" src="{{image_path}}/screenshot.jpg" /></div>
+	<div><img alt="Emergent behavior: agents fenced in using red dots" src="{{image_path}}/fence-in.jpg" /></div>
+	<div><img alt="Emergent behavior: agents avoiding an obstacle" src="{{image_path}}/avoid.jpg" /></div>
 </div>
 
-Vivamus metus neque, sollicitudin eget erat sed, vestibulum accumsan sapien. Donec nibh urna, luctus eu iaculis et, interdum nec massa. Curabitur vel blandit ex. Sed dignissim tristique erat at malesuada. Aenean gravida auctor semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi blandit lacus lacus, sit amet maximus ex gravida nec. Phasellus vitae sem ac turpis bibendum rutrum id ac sem.
+This was the first project I developed in Unreal, thus one of the goals was to gain familiarity with such an engine that is widely used in the industry. Hence, the project was developed using both Blueprint for the main algorithm, and C++ for the other parts of the game that hold the context on which the algorithm is used.
+
+As a final note, one of the delights of the project was when, after one month of development, the final result was shared with family and friends in order to test its usability, and some of them would continue playing after the test was over, which shows the algorithm's potential as a possibly enjoyable game mechanic in a game.
