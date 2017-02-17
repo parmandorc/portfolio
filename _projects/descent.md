@@ -8,6 +8,7 @@ tags:
  - artificial intelligence
  - gameplay programming
  - behavior tree
+ - pathfinding
  - unreal
  - blueprint
 video_id: H7Oh1xJ3M38
