@@ -18,7 +18,7 @@ links:
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This tool was developed as a group coursework project for the _Tools & Middleware_ course (MScCGE at Goldsmiths, University of London). The tool's goal is procedurally generating dungeon-like structures using a given kit of modular assets. It was fully developed in Python, making use of the FBX SDK.
+This tool was developed as a group coursework project for the __Tools & Middleware__ course (MScCGE at Goldsmiths, University of London). The tool's goal is procedurally generating dungeon-like structures using a given kit of modular assets. It was fully developed in Python, making use of the FBX SDK.
 
 The system recursively builds the dungeon from an initially generated graph of the dungeon's high-level structure, placing the different tile assets by following the generation algorithm. Some of the most interesting aspects of the algorithm are:
 

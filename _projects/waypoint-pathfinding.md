@@ -18,7 +18,7 @@ links:
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This was a quick project developed over two 1-hour lab sessions on the AI course (MScCGE at Goldsmiths, University of London), showcasing a very simple pathfinding system over a graph of waypoints.
+This was a quick project developed over two 1-hour lab sessions on the __AI for games__ course (MScCGE at Goldsmiths, University of London), showcasing a very simple pathfinding system over a graph of waypoints.
 
 The pathfinding is based on the A* search algorithm, and the edges in the graph can be either explicitly defined by a designer, or dynamically generated at start using raycasts.
 
