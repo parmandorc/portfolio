@@ -7,7 +7,7 @@ intro: Terrain generation tool based in Perlin noise, which also performs the ge
 tags:
  - procedural content generation
  - artificial intelligence
- - tools
+ - tools programming
  - multithreading programming
  - data structures
  - unity3d
