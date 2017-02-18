@@ -3,3 +3,6 @@
   <a href="{{ site.linkedin }}" target="_blank" rel="noopener">Linked In</a>
   <a href="{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
 </footer>
+<script async>
+  if("function"==typeof FontFace)[{n:"Lato",w:300,s:'{{ "assets/fonts/LatoLatin-Light.woff2" | relative_url}}'},{n:"Lato",w:400,s:'{{ "assets/fonts/LatoLatin-Semibold.woff2" | relative_url}}'},{n:"Lato",w:700,s:'{{ "assets/fonts/LatoLatin-Bold.woff2" | relative_url}}'}].forEach(function(t){new FontFace(t.n,"url("+t.s+")",{weight:t.w}).load().then(function(t){document.fonts.add(t)})});else{var l=document.createElement("link");l.rel="stylesheet",l.href='{{ "styles/fonts.css" | relative_url}}',l.type="text/css",document.head.appendChild(l)}
+</script>
