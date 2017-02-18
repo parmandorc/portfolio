@@ -4,11 +4,17 @@
     <title>{{ page.title }} {{ site.page-title-suffix }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="pablo armando rodriguez codes,pablo armando,parmandorc,portfolio,{{ page.keywords }}">
     <link rel="stylesheet" href="{{ "styles/shared.css" | relative_url}}" type="text/css">
     {% assign css_filename = (page.css == 'homepage') ? 'homepage' : 'about'  %}
     <link rel="stylesheet" href="{{css_filename | prepend: 'styles/' | append: '.css' | relative_url}}" type="text/css">
-    <meta name="description" content="{{ page.description }}">
-    <meta name="keywords" content="pablo armando rodriguez codes,pablo armando,parmandorc,portfolio,{{ page.keywords }}">
+    <link rel="prefetch" href="{{ "styles/projects.css" | relative_url}}">
+    {% for project in site.projects %}
+      {% if project.featured == 'primary' or project.featured == 'secondary' %}
+        <link rel="prefetch" href="{{ site.baseurl }}{{ project.url }}">
+      {% endif %}
+    {% endfor %}
   </head>
   <body>
     {% include header.html %}
