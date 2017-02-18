@@ -22,7 +22,7 @@ links:
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This project was developed during an internship at the MIDAS research group of the _Universidad Politécnica de Madrid_, in collaboration with the company [Lurtis Rules](https://www.lurtis.com/), during the first term of the last year of my BSc in Computer Science. The project was then continued during the second and last term as Final Degree Project. The project was chosen as it was something I could work on during my generalistic BSc that was specifically related to videogames and artificial intelligence.
+This project was developed during an internship at the MIDAS research group of the _Universidad Politécnica de Madrid_, in collaboration with the company <a href="https://www.lurtis.com/" target="_blank" rel="noopener">Lurtis Rules</a>, during the first term of the last year of my BSc in Computer Science. The project was then continued during the second and last term as Final Degree Project. The project was chosen as it was something I could work on during my generalistic BSc that was specifically related to videogames and artificial intelligence.
 
 The main goals of the project were, first, to show the potential of _on-the-fly_ generation –that is, the ability to generate all the results on runtime from as little definition data as possible–, and second, to develop a tool with rich and dynamic interaction –i.e., with a wide range of inputs to allow the user to control the results in depth.
 
