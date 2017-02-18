@@ -106,11 +106,22 @@
     ul, ol {
       max-width: $content-max-width;
       margin: 10px auto 0;
+      padding: 0 20px;
       line-height: 1.6;
-      text-align: justify;
+
+      @media #{$mq-large-mobile} {
+        padding: 0 40px;
+        text-align: justify;
+      }
+
 
       @media #{$mq-tablet} {
         margin: 20px auto 0;
+      }
+
+      > li {
+        margin-bottom: 10px;
+        &:last-of-type { margin-bottom: 0; }
       }
     }
 
