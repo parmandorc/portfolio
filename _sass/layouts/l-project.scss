@@ -132,7 +132,6 @@
 
       @media #{$mq-media} {
         display: flex;
-        align-items: stretch;
         margin: 40px auto 0;
       }
 
@@ -144,8 +143,6 @@
         }
 
         @media #{$mq-media} {
-          flex-grow: 1;
-
           &:first-of-type {
             margin-right: 5px;
             margin-bottom: 0;
@@ -153,10 +150,15 @@
         }
 
         > img {
-          width: 100%;
+          width: auto;
+          max-width: 100%;
+          margin: 0 auto;
+
 
           @media #{$mq-media} {
             position: static;
+            width: 100%;
+            margin: 0;
           }
         }
       }
