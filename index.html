@@ -6,7 +6,9 @@ keywords:
 css: homepage
 ---
 
-{% for project in site.projects %}
+{% assign sorted_projects = site.projects | sort: "priority" %}
+
+{% for project in sorted_projects %}
   {% if project.featured == 'primary' %}
     {% assign name = project.path | split: "/" | last | split: "." | first %}
     <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project -big" aria-labelledby="{{name}}">
@@ -21,7 +23,7 @@ css: homepage
   {% endif %}
 {% endfor %}
 
-{% for project in site.projects %}
+{% for project in sorted_projects %}
   {% if project.featured == 'secondary' %}
     {% assign name = project.path | split: "/" | last | split: "." | first %}
     <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project" aria-labelledby="{{name}}">
@@ -37,7 +39,7 @@ css: homepage
 {% endfor %}
 
 <div class="c-cards-list">
-  {% for project in site.projects %}
+  {% for project in sorted_projects %}
     {% if project.featured.size == nil %}
       {% assign name = project.path | split: "/" | last | split: "." | first %}
       <a href="{{ site.baseurl }}{{ project.url }}" class="card" aria-labelledby="{{name}}">

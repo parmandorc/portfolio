@@ -17,6 +17,7 @@ position: AI/gameplay programmer
 dates: Dec 2016 - Jan 2017
 links: 
  - GitHub: https://github.com/parmandorc/Descent
+priority: 0
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

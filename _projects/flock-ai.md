@@ -16,6 +16,7 @@ position: Main programmer
 dates: May 2015
 links: 
  - GitHub: https://github.com/parmandorc/FlockAI
+priority: 20 
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

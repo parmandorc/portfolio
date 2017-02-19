@@ -12,6 +12,7 @@ position: Main programmer
 dates: Dec 2016
 links: 
  - GitHub: https://github.com/parmandorc/octet/tree/l-systems/octet/src/examples/l_systems
+priority: 80
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

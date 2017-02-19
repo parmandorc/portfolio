@@ -18,6 +18,7 @@ position: Main developer
 dates: Sep 2015 - Jul 2016
 links: 
  - GitHub: https://github.com/parmandorc/PCG
+priority: 10
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
