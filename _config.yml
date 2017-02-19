@@ -35,6 +35,7 @@ defaults:
 markdown: kramdown
 gems:
 - jekyll-autoprefixer
+- jekyll-minifier
 exclude:
   - Gemfile
   - Gemfile.lock
