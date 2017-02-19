@@ -8,51 +8,51 @@ css: homepage
 
 {% assign sorted_projects = site.projects | sort: "priority" %}
 
-{% for project in sorted_projects %}
-  {% if project.featured == 'primary' %}
-    {% assign name = project.path | split: "/" | last | split: "." | first %}
-    <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project -big" aria-labelledby="{{name}}">
-      <div class="shadow"></div>
-      <div class="background">
-        <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
-      </div>
-      <div class="gradient"></div>
-      <h3 id="{{name}}"><span>Featured</span>{{ project.title }}</h3>
-      <p>{{ project.intro }}</p>
-    </a>
-  {% endif %}
-{% endfor %}
+{% assign primary_project = sorted_projects | where: "featured", "primary" | first %}
 
-{% for project in sorted_projects %}
-  {% if project.featured == 'secondary' %}
-    {% assign name = project.path | split: "/" | last | split: "." | first %}
-    <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project" aria-labelledby="{{name}}">
-      <div class="shadow"></div>
-      <div class="background">
-        <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
-      </div>
-      <div class="gradient"></div>
-      <h3 id="{{name}}"><span>Featured</span>{{ project.title }}</h3>
-      <p>{{ project.intro }}</p>
-    </a>
-  {% endif %}
+{% assign secondary_projects = sorted_projects | where: "featured", "secondary" %}
+
+{% assign other_projects = sorted_projects | where_exp: "project", "project.featured.size == nil" %}
+
+{% if primary_project %}
+  {% assign name = primary_project.path | split: "/" | last | split: "." | first %}
+  <a href="{{ site.baseurl }}{{ primary_project.url }}" class="c-featured-project -big" aria-labelledby="{{name}}">
+    <div class="shadow"></div>
+    <div class="background">
+      <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+    </div>
+    <div class="gradient"></div>
+    <h3 id="{{name}}"><span>Featured</span>{{ primary_project.title }}</h3>
+    <p>{{ primary_project.intro }}</p>
+  </a>
+{% endif %}
+
+{% for project in secondary_projects %}
+  {% assign name = project.path | split: "/" | last | split: "." | first %}
+  <a href="{{ site.baseurl }}{{ project.url }}" class="c-featured-project" aria-labelledby="{{name}}">
+    <div class="shadow"></div>
+    <div class="background">
+      <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+    </div>
+    <div class="gradient"></div>
+    <h3 id="{{name}}"><span>Featured</span>{{ project.title }}</h3>
+    <p>{{ project.intro }}</p>
+  </a>
 {% endfor %}
 
 <div class="c-cards-list">
-  {% for project in sorted_projects %}
-    {% if project.featured.size == nil %}
-      {% assign name = project.path | split: "/" | last | split: "." | first %}
-      <a href="{{ site.baseurl }}{{ project.url }}" class="card" aria-labelledby="{{name}}">
-        <div class="shadow"></div>
-        <div class="background"></div>
-        <div class="thumbnail">
-          <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
-        </div>
-        <div class="content">
-          <h3 id="{{name}}">{{ project.title }}</h3>
-          <p>{{ project.intro }}</p>
-        </div>
-      </a>
-    {% endif %}
+  {% for project in other_projects %}
+    {% assign name = project.path | split: "/" | last | split: "." | first %}
+    <a href="{{ site.baseurl }}{{ project.url }}" class="card" aria-labelledby="{{name}}">
+      <div class="shadow"></div>
+      <div class="background"></div>
+      <div class="thumbnail">
+        <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"></div>
+      </div>
+      <div class="content">
+        <h3 id="{{name}}">{{ project.title }}</h3>
+        <p>{{ project.intro }}</p>
+      </div>
+    </a>
   {% endfor %}
 </div>
