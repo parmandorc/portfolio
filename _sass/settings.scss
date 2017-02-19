@@ -33,17 +33,17 @@ $wrapper-padding:         15px;
 $wrapper-padding-medium:  30px;
 $wrapper-padding-large:   42px;
 
-// General layout
-$content-max-width: 620px; // max-width for the text
-$media-max-width:   768px; // max-width for the media within paragraphs
-
-// Depth effect
-$depth-scale: 101 / 100;
-
 // Breakpoints
 $breakpoint-large-mobile:   425px;
 $breakpoint-tablet:         768px;
 $breakpoint-laptop:        1024px;
+
+// General layout
+$content-max-width: 620px; // max-width for the text
+$media-max-width: $breakpoint-tablet - (2 * $wrapper-padding-medium); // max-width for the media within paragraphs
+
+// Depth effect
+$depth-scale: 101 / 100;
 
 // Media queries
 $mq-large-mobile: 'screen and (min-width: #{$breakpoint-large-mobile})';
