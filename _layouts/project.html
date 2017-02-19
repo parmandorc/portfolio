@@ -51,6 +51,48 @@
       <article>
         {{ content }}
       </article>
+
+      <nav class="c-related-projects">
+        {% assign sorted_projects = site.projects | sort: "priority" %}
+
+        {% for project in sorted_projects %}
+          {% if project.title == page.title %}
+            {% if forloop.index == 1 %}
+              {% assign previous_project = sorted_projects | last %}
+              {% assign next_project = sorted_projects[forloop.index] %}
+            {% elsif forloop.index == sorted_projects.size %}
+              {% assign previous_project = sorted_projects[previous_index] %}
+              {% assign next_project = sorted_projects | first %}
+            {% else %}
+              {% assign previous_project = sorted_projects[previous_index] %}
+              {% assign next_project = sorted_projects[forloop.index] %}
+            {% endif %}
+          {% endif %}
+          {% assign previous_index = forloop.index0 %}
+        {% endfor %}
+
+        {% assign previous_name = previous_project.path | split: "/" | last | split: "." | first %}
+        {% assign next_name = next_project.path | split: "/" | last | split: "." | first %}
+
+        <a href="{{ site.baseurl }}{{previous_project.url}}" aria-label="Previous project: {{previous_project.title}}">
+          <div class="shadow"></div>
+          <div class="background">
+            <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ previous_name }}/thumbnail.jpg');"></div>
+          </div>
+          <h3>{{previous_project.title}}</h3>
+          <p>← Previous</p>
+        </a>
+
+        <a href="{{ site.baseurl }}{{next_project.url}}" aria-label="Next project: {{next_project.title}}">
+          <div class="shadow"></div>
+          <div class="background">
+            <div style="background-image: url('{{ site.baseurl }}/assets/images/{{ next_name }}/thumbnail.jpg');"></div>
+          </div>
+          <div class="gradient"></div>
+          <h3>{{next_project.title}}</h3>
+          <p>Next project →</p>
+        </a>
+      </nav>
     </div>
 
     {% include footer.html %}
