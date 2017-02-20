@@ -12,7 +12,7 @@ position: Main programmer
 dates: Oct 2016 - Nov 2016
 links: 
  - GitHub: https://github.com/parmandorc/octet/tree/master/octet/src/examples/example_shapes
-priority: 70
+priority: 90
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

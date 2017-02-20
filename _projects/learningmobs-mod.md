@@ -16,7 +16,7 @@ dates: Oct 2014
 links: 
  - GitHub: https://github.com/parmandorc/LearningMobs-Mod
  - Minecraft Forum: http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2241864-learningmobs-mod
-priority: 90
+priority: 50
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

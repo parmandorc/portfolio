@@ -14,7 +14,7 @@ position: Lead programmer
 dates: Nov 2016 - Jan 2017
 links: 
  - GitHub: https://github.com/eliodeberardinis/Tools_Middleware_2_Dungeon
-priority: 60
+priority: 30
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

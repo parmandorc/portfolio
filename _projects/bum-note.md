@@ -15,7 +15,7 @@ links:
  - Play the game now!: https://lukesanderson18.github.io/Bum-Note
  - GlobalGameJam: http://globalgamejam.org/2017/games/bum-note
  - GitHub: https://github.com/LukeSanderson18/Bum-Note
-priority: 30
+priority: 40
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}

@@ -14,7 +14,7 @@ position: Main programmer
 dates: Jan 2017
 links: 
  - GitHub: https://github.com/parmandorc/WaypointPathfinding
-priority: 50
+priority: 60
 ---
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
