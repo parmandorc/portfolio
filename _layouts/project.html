@@ -10,6 +10,14 @@
     <link rel="prefetch" href="{{ "styles/homepage.css" | relative_url}}">
     <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="pablo armando rodriguez codes,pablo armando,parmandorc,portfolio,{{ page.keywords }},{{ page.tags | join:',' }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@parmandorc">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="http://parmandorc.github.io/portfolio/assets/images/{{ name }}thumbnail.jpg">
+    <meta property="og:url" content="http://parmandorc.github.io/portfolio/">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="http://parmandorc.github.io/portfolio/assets/images/{{ name }}thumbnail.jpg">
   </head>
   <body>
     {% include header.html %}

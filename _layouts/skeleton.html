@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="pablo armando rodriguez codes,pablo armando,parmandorc,portfolio,{{ page.keywords }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@parmandorc">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta property="og:url" content="http://parmandorc.github.io/portfolio/">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="http://parmandorc.github.io/portfolio/apple-touch-icon-180x180.png">
     <link rel="stylesheet" href="{{ "styles/shared.css" | relative_url}}" type="text/css">
     {% assign css_filename = (page.css == 'homepage') ? 'homepage' : 'about'  %}
     <link rel="stylesheet" href="{{css_filename | prepend: 'styles/' | append: '.css' | relative_url}}" type="text/css">
