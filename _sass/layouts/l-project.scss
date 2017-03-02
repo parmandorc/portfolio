@@ -1,54 +1,55 @@
 .l-project {
 
-  > .c-cover {
-    margin-bottom: 0;
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
+  > .c-cover iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   > .project-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: $media-max-width;
-    margin: 25px 0 30px;
 
-    @media #{$mq-tablet} {
-      flex-wrap: nowrap;
-      align-items: flex-end;
-      margin: -55px auto 50px;
-    }
+    margin: 0 auto 40px;
 
-    .card {
-      flex-basis: 100%;
-      flex-shrink: 0;
-      padding: 20px 25px;
-      background-color: $color-4;
-      // font-size: $font-size-medium;
-      box-shadow: 0 0 15px rgba($color-9, .3);
-      z-index: 1;
+    .details {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      border-top: 1px solid $color-7;
+      border-bottom: 1px solid $color-7;
+      list-style: none;
 
       @media #{$mq-tablet} {
-        flex-basis: calc(50% - (35px / 2));
-        margin-right: 35px;
+        flex-direction: row;
       }
 
-      > div {
+      > li {
         display: flex;
-        align-items: stretch;
-        margin-bottom: 8px;
+        margin-right: 40px;
+        margin-bottom: .5em;
 
         &:last-of-type {
           margin-bottom: 0;
         }
 
-        &.links a {
+        @media #{$mq-tablet} {
+          display: block;
+          margin-bottom: 0;
+        }
+
+        > span {
+          display: block;
+          flex-basis: 100px;
+          flex-shrink: 0;
+          color: $color-3;
+          font-size: $font-size-small;
+          line-height: 1.5;
+          text-transform: uppercase;
+        }
+
+        a {
           &::after {
-            content: ' -\00a0';
+            content: ' -';
           }
 
           &:last-of-type {
@@ -57,24 +58,11 @@
             }
           }
         }
-
-        span {
-          display: inline-block;
-          flex-basis: 80px;
-          flex-shrink: 0;
-          margin-right: 20px;
-          color: $color-3;
-        }
       }
     }
 
     .c-tags-list {
-      margin-top: 25px;
-
-      @media #{$mq-tablet} {
-        margin-top: 75px;
-        margin-bottom: -5px;
-      }
+      margin: 0 -5px;
     }
   }
 }

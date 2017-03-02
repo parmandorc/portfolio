@@ -20,16 +20,16 @@
       {% assign name = page.path | split: "/" | last | split: "." | first %}
       <div class="c-cover" {% unless page.video_id %}style="background-image: url('{{ site.baseurl }}/assets/images/{{ name }}/thumbnail.jpg');"{% endunless %}>
         {%if page.video_id %}
-          <iframe type="text/html" src="https://www.youtube.com/embed/{{page.video_id}}?controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>
+          <iframe type="text/html" src="https://www.youtube.com/embed/{{page.video_id}}?modestbranding=1&rel=0&showinfo=0" frameborder="0"></iframe>
         {% endif %}
       </div>
 
       <div class="project-info">
-        <div class="card">
-          <div><span>Type</span> {{page.type}} {% unless page.type %}–{% endunless%}</div>
-          <div><span>Position</span> {{page.position}} {% unless page.position %}–{% endunless%}</div>
-          <div><span>Date</span> {{page.dates}} {% unless page.dates %}–{% endunless%}</div>
-          <div class="links">
+        <ul class="details">
+          <li><span>Type</span> {{page.type}} {% unless page.type %}–{% endunless%}</li>
+          <li><span>Position</span> {{page.position}} {% unless page.position %}–{% endunless%}</li>
+          <li><span>Date</span> {{page.dates}} {% unless page.dates %}–{% endunless%}</li>
+          <li class="links">
             <span>Links</span>
             <div>
               {% for link_hash in page.links %}
@@ -39,14 +39,15 @@
               {% endfor %}
               {% unless page.links %}–{% endunless%}
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
         <ul class="c-tags-list">
           {% for tag in page.tags %}
-            <li class="tag">{{ tag }}</li>
+            <li class="tag -mini">{{ tag }}</li>
           {% endfor %}
-        </div>
-      </ul>
+        </ul>
+
+      </div>
 
       <article class="c-content">
         {{ content }}

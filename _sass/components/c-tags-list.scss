@@ -12,5 +12,9 @@
     font-size: $font-size-small;
     line-height: 25px;
     text-transform: uppercase;
+
+    &.-mini {
+      font-size: $font-size-x-small;
+    }
   }
 }
