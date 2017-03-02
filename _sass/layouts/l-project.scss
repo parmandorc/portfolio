@@ -1,16 +1,7 @@
 .l-project {
 
-  > .video {
-    width: 100%;
-    height: 205px;
-    background-color: $color-2;
-    background-position: center center;
-    background-size: cover;
-    z-index: 0;
-
-    @media #{$mq-tablet} {
-      height: 530px;
-    }
+  > .c-cover {
+    margin-bottom: 0;
 
     iframe {
       display: block;
@@ -83,99 +74,6 @@
       @media #{$mq-tablet} {
         margin-top: 75px;
         margin-bottom: -5px;
-      }
-    }
-  }
-
-  > article {
-    p {
-      max-width: $content-max-width;
-      margin: 30px auto 0;
-      line-height: 1.6;
-      text-align: justify;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
-
-      @media #{$mq-tablet} {
-        margin: 40px auto 0;
-      }
-    }
-
-    ul, ol {
-      max-width: $content-max-width;
-      margin: 10px auto 0;
-      padding: 0 20px;
-      line-height: 1.6;
-
-      @media #{$mq-large-mobile} {
-        padding: 0 40px;
-        text-align: justify;
-      }
-
-
-      @media #{$mq-tablet} {
-        margin: 20px auto 0;
-      }
-
-      > li {
-        margin-bottom: 10px;
-        &:last-of-type { margin-bottom: 0; }
-      }
-    }
-
-    a {
-      text-decoration: underline;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      max-width: $media-max-width;
-
-      @media #{$mq-media} {
-        position: relative;
-        left: #{-($media-max-width - $content-max-width) / 2};
-        width: auto;
-      }
-    }
-
-    .image-group {
-      max-width: $media-max-width;
-      margin: 30px auto 0;
-
-      @media #{$mq-media} {
-        display: flex;
-        margin: 40px auto 0;
-      }
-
-      > div {
-        min-width: 0;
-
-        &:first-of-type {
-          margin-bottom: 5px;
-        }
-
-        @media #{$mq-media} {
-          &:first-of-type {
-            margin-right: 5px;
-            margin-bottom: 0;
-          }
-        }
-
-        > img {
-          width: auto;
-          max-width: 100%;
-          margin: 0 auto;
-
-
-          @media #{$mq-media} {
-            position: static;
-            width: 100%;
-            margin: 0;
-          }
-        }
       }
     }
   }

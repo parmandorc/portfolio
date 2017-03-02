@@ -1,32 +1,20 @@
 .l-about {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: $wrapper-padding;
-  background: linear-gradient(to right, transparent, $color-9 50%), url('../assets/images/about-bg.jpg') no-repeat center center;
-  background-size: cover;
-
-  @media #{$mq-large-mobile} {
-    padding: $wrapper-padding-medium;
-  }
-
-  @media #{$mq-tablet} {
-    height: 530px;
-    padding: 0 80px 0 0;
-    background: linear-gradient(to right, transparent, $color-9), url('../assets/images/about-bg.jpg') no-repeat center center;
+  > .c-cover {
+    background: url('../assets/images/about-bg.jpg') no-repeat center center / cover;
   }
 
   > p {
-    @include text-legibility;
-    max-width: 200px;
-    margin: 0;
-    color: $color-4;
-    line-height: 1.3;
-    text-align: right;
+    max-width: $content-max-width;
+    margin: 30px auto 0;
+    line-height: 1.6;
+    text-align: justify;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
 
     @media #{$mq-tablet} {
-      max-width: 380px;
-      font-size: $font-size-medium;
+      margin: 40px auto 0;
     }
   }
 }
