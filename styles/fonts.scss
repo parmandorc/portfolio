@@ -15,6 +15,13 @@
 
 @font-face {
   font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../assets/fonts/LatoLatin-SemiboldItalic.woff2') format('woff2'), url('../assets/fonts/LatoLatin-SemiboldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
   font-weight: 700;
   src: url('../assets/fonts/LatoLatin-Bold.woff2') format('woff2'), url('../assets/fonts/LatoLatin-Bold.woff') format('woff');
 }
