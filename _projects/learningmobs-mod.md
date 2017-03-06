@@ -22,7 +22,7 @@ priority: 50
 
 This is a mod for the game Minecraft that showcases an implementation of a reinforcement learning algorithm for the combat AI of NPCs (Non-Player Characters).
 
-It was developed as a personal project during my BSc in Computer Science (at Universidad Politécnica de Madrid) in order to develop something that was specific to video games, in contrast with the generalistic nature of the work being done during said degree. In fact, a key goal was to create something that was closely related to the field of AI in video games, being this the first project I ever developed on that area. Finally, Minecraft was the chosen platform as it enabled quick development and had great available sources of documentation.
+It was developed as a personal project during my BSc in Computer Science (at _Universidad Politécnica de Madrid_) in order to develop something that was specific to video games, in contrast with the generalistic nature of the work being done during said degree. In fact, a key goal was to create something that was closely related to the field of AI in video games, being this the first project I ever developed on that area. Finally, Minecraft was the chosen platform as it enabled quick development and had great available sources of documentation.
 
 The project is an implementation of the SARSA q-learning algorithm, which is based on the idea that agents have a list of tasks they can perform, and will learn from experience which task is optimal for a given state of the fight.
 

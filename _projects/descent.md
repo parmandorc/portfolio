@@ -21,7 +21,7 @@ priority: 0
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This was the first big group project I got to partake in during my time at Goldsmiths, University of London, that involved collaboration between programmers and artists (3 and 4 students, respectively). Hence, team and social skills were essential in the development of the project.
+This was the first big group project I got to partake in during my time at _Goldsmiths, University of London_, that involved collaboration between programmers and artists (3 and 4 students, respectively). Hence, team and social skills were essential in the development of the project.
 
 As the AI programmer of the team, my main responsibility was the development of the AI system in the game. The AI of the enemy is based on a Behavior Tree, with two basic behaviors: cyclic patrolling through a set of waypoints, and chasing the player when in vision range (and going to their last known location when losing vision of them). Although the Behavior Tree is rather simple, it has served to gain familiarity with the AI tools available in Unreal Engine. This includes the Blackboard and BT assets, or the different types of nodes for BT Blueprint programming, such as tasks, decorators and services, but also other systems like the NavMesh and its settings.
 

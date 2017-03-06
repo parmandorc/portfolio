@@ -19,7 +19,7 @@ priority: 40
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This game was developed for the Global Game Jam 2017, during one weekend at the Goldsmiths (University of London) event. The team consisted of 3 programmers and 1 audio engineer, thus our choice to make a music-based game for the project.
+This game was developed for the Global Game Jam 2017, during one weekend at the _Goldsmiths, University of London_ event. The team consisted of 3 programmers and 1 audio engineer, thus our choice to make a music-based game for the project.
 
 The game's main idea roughly consists in the player trying to jump on stage to fix the constantly deteriorating instruments the band members are playing – this affects the dynamically changing audio tracks for each instrument, which get worse on runtime as they break down. All of this while trying to avoid getting caught in the spotlight so the audience doesn't through a tomato at you and knock you off stage.
 

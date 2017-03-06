@@ -16,7 +16,7 @@ priority: 80
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This was a project developed for the __Mathematics & Graphics__ course (MScCGE at Goldsmiths, University of London), and it shows an implementation of L-systems, which are used for generating tree-like structures.
+This was a project developed for the __Mathematics & Graphics__ course (MScCGE at _Goldsmiths, University of London_), and it shows an implementation of L-systems, which are used for generating tree-like structures.
 
 L-systems consist of a generative grammar that produces a string which is then processed using turtle-graphics to generate the resulting graphical structure.
 

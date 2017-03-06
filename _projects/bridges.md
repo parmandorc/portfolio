@@ -16,7 +16,7 @@ priority: 90
 
 {% assign image_path = page.url | split: "/" | last | prepend: '/assets/images/' | prepend: site.baseurl %}
 
-This was a quick project developed for the __Tools & Middleware__ course (MScCGE at Goldsmiths, University of London), thought as a demo of the Bullet Physics engine.
+This was a quick project developed for the __Tools & Middleware__ course (MScCGE at _Goldsmiths, University of London_), thought as a demo of the Bullet Physics engine.
 
 The application shows a scene with physically-based bridges, constructed with the two main types of constraints in the Bullet SDK (hinges and springs).
 
