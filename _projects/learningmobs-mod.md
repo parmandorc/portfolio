@@ -1,6 +1,5 @@
 ---
 title: LearningMobs Mod
-description: LearningMobs Mod
 keywords: ai, artificial intelligence, reinforcement learning, qlearning, machine learning, minecraft, mod, forge
 intro: Mod for Minecraft showcasing an implementation of a reinforcement learning algorithm for the combat AI of NPCs.
 tags:

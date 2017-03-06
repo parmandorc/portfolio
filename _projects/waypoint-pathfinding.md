@@ -1,6 +1,5 @@
 ---
 title: Waypoint Pathfinding Demo
-description: Waypoint Pathfinding Demo
 keywords: waypoint, pathfinding, a*, search, graph, goldsmiths, msccge
 intro: Quick demo of waypoint pathfinding using the A* search algorithm.
 tags:

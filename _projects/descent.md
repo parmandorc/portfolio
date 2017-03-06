@@ -1,6 +1,5 @@
 ---
 title: Descent
-description: Descent
 keywords: descent, unreal, eye, game, goldsmiths, msccge
 featured: primary
 intro: Puzzle horror game developed in Unreal. Contribution includes the development of the AI system and other general gameplay elements.

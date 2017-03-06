@@ -1,6 +1,5 @@
 ---
 title: Bum Note
-description: Bum Note
 keywords: bumnote, video games, programming, development, game jam, global game jam, gameplay, music, band
 intro: Web browser music-based game developed for the Global Game Jam 2017.
 tags:

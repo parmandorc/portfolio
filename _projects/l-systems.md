@@ -1,6 +1,5 @@
 ---
 title: L-systems
-description: L-systems
 keywords: l-systems, fractal, graphics, mathematics, grammar, goldsmiths, msccge
 intro: Demo of generation of tree-like structures using L-systems.
 tags:

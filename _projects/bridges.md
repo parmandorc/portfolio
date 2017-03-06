@@ -1,6 +1,5 @@
 ---
 title: Bridges
-description: Bridges (Bullet Physics Demo)
 keywords: physics, bullet, constraint, hinge, spring, goldsmiths, msccge
 intro: Demo of the Bullet Physics engine showcasing a scene with bridges constructed with constraints.
 tags:

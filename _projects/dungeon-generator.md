@@ -1,6 +1,5 @@
 ---
 title: Dungeon Generator
-description: Dungeon Generator
 keywords: dungeon, generator, eye, procedural generation, fbx, goldsmiths, msccge
 intro: Tool for procedural generation of dungeons from a kit of modular assets.
 tags:

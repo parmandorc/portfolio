@@ -1,6 +1,5 @@
 ---
 title: FlockAI
-description: FlockAI
 keywords: flockai, flock, ai, flock ai, unreal, flocking, behavior, behaviour
 featured: secondary
 intro: Implementation of a flocking behavior algorithm, featuring reaction to external stimuli.

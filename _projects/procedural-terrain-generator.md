@@ -1,6 +1,5 @@
 ---
 title: Procedural Terrain Generator
-description: PTG
 keywords: procedural terrain generation, procedural content generation, upm, universidad politécnica de madrid, etsiinf, escuela técnica superior de ingenieros informáticos, grado, ingeniería informática, practicum, internship, proyecto final de grado, final degree project, lurtis rules
 featured: secondary
 intro: Terrain generation tool based in Perlin noise, which also performs the generation of water bodies and roads.

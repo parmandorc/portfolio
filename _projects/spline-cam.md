@@ -1,6 +1,5 @@
 ---
 title: SplineCam
-description: SplineCam
 keywords: spline, bspline, maths, geometry, opengl, goldsmiths, msccge
 intro: Spline editing tool aimed at definition and modification of a curve that a 3D camera will follow.
 tags:
