@@ -7,8 +7,9 @@ tags:
  - procedural content generation
  - artificial intelligence
  - tools programming
- - multithreading programming
+ - multithreaded programming
  - data structures
+ - optimization
  - unity3d
  - c#
 video_id: 

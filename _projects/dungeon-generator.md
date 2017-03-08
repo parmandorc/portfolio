@@ -5,6 +5,7 @@ intro: Tool for procedural generation of dungeons from a kit of modular assets.
 tags:
  - procedural content generation
  - tools programming
+ - optimization
  - python
  - fbx
 video_id: 4XtY1zG42ec
