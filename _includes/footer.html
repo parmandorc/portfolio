@@ -6,3 +6,11 @@
 <script async>
   if("function"==typeof FontFace)[{n:"Lato",w:300,s:'{{ "assets/fonts/LatoLatin-Light.woff2" | relative_url}}'},{n:"Lato",w:400,s:'{{ "assets/fonts/LatoLatin-Semibold.woff2" | relative_url}}'},{n:"Lato",w:400,q:"italic",s:'{{ "assets/fonts/LatoLatin-SemiboldItalic.woff2" | relative_url}}'},{n:"Lato",w:700,s:'{{ "assets/fonts/LatoLatin-Bold.woff2" | relative_url}}'}].forEach(function(t){new FontFace(t.n,"url("+t.s+")",{weight:t.w,style:t.q||"normal"}).load().then(function(t){document.fonts.add(t)})});else{var l=document.createElement("link");l.rel="stylesheet",l.href='{{ "styles/fonts.css" | relative_url}}',l.type="text/css",document.head.appendChild(l)}
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-93821423-1', 'auto');
+  ga('send', 'pageview');
+</script>
