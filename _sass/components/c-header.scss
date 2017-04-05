@@ -1,6 +1,7 @@
 .c-header {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 15px;
 
@@ -8,7 +9,7 @@
     margin-top: 30px;
   }
 
-  > h2 {
+  h2 {
     margin: 0;
     font-size: $font-size-medium;
     font-weight: $font-weight-bold;
@@ -19,6 +20,25 @@
       @media #{$mq-tablet} {
         display: inline;
       }
+    }
+  }
+
+  h3 {
+    flex-basis: 100%;
+    margin: 15px 0 0;
+    padding-top: 5px;
+    border-top: 1px solid $color-8;
+    color: $color-3;
+    font-size: $font-size-medium;
+    font-style: italic;
+    font-weight: $font-weight-normal;
+    text-align: center;
+
+    @media #{$mq-large-mobile} {
+      margin: 5px 0 0;
+      padding-top: 0;
+      border: 0;
+      text-align: left;
     }
   }
 
