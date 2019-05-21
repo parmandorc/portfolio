@@ -32,4 +32,4 @@ As the AI programmer of the team, my main responsibility was the development of 
 
 However, I also got to develop other gameplay elements, particularly three of the puzzles in the game: the 9 tiles puzzle, the day-night switch and the main altar / final puzzle. This involved work with different aspects of gameplay programming, such as camera animation, management of objects in the scene, collisions, player input, and even some level streaming (used for the day and night scenarios).
 
-Finally, after some communication issues and technical difficulties were solved, the game was finished in time with all of its main major features. In fact, part of the team keeps working on the game to this day with the idea of possibly trying to publish it in the future.
+Finally, after some communication issues and technical difficulties were solved, the game was finished in time with all of its main major features.
